@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+</head>
+<body>
+
+    <p id="testcase"></p>
+    <!-- <button onclick="myFunction()">Kiểm tra</button> -->
+
+    <script>
+                                                               
+        function findOppositenumber(n, inputNumber){
+            if ((0<=inputNumber <= n-1) && (inputNumber >5)   )  
+                return (inputNumber + (n/2))%n;
+            if ((0 <= inputNumber <= n - 1) && (inputNumber <=5)  )
+               return (inputNumber + (n/2));
+            
+            
+        }
+        console.log(findOppositenumber( 10 ,6));
+        document.getElementById("testcase").innerHTML = findOppositenumber( 10 ,6);
+    </script>
+    
+</body>
+</html>
